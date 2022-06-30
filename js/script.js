@@ -8,7 +8,8 @@ $(document).ready(function () {
     e.preventDefault();
     const userName = document.querySelector('#contact-name').value
     const userNumber = document.querySelector('#contact-email').value
-    const mytext = `👤 ISMI=${userName}%0A📶 NOMERI:>${userNumber}%0A📶 ALOQAGA:${userName+"::KILENT"}`
+    const userOption = document.querySelector('#option').value
+    const mytext = `🏚 Manzil=${userOption}%0A👤ISMI=${userName}%0A📶 NOMERI:>${userNumber}%0A📶ALOQAGA:${userName+"::KILENT"}`
 
     try {
       fetch(`https://api.telegram.org/bot${Token}/sendMessage?chat_id=${id}&text=${mytext}`, {

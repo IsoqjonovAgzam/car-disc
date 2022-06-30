@@ -137,6 +137,27 @@
 
                 </div>
 
+                <section class="offer section">
+
+                    <div class="offer__container container grid">
+
+                        <div class="offer__data">
+                            <h2 class="section__title offer__title" style="font-size: 35px; margin-bottom: 15px;">
+                                Yetkazib berish <br> O'zbekiston bo'ylab bepul
+                            </h2>
+
+                            <p style="font-size: 22px;">
+                                To'lov yetkazilgandan so'ng amalga oshiriladi
+                            </p>
+
+                        </div>
+
+                        <img style="margin-right: 10px;" class=" img-fluid" src="./site/img/taxi.png" alt="">
+
+                    </div>
+
+                </section>
+
 
 
                 <section class="consultation">
@@ -146,9 +167,6 @@
                         </h1>
 
 
-                        <p style="text-align: center; margin-bottom: 50px;">
-                            Yetkazib berish O'zbekiston bo'ylab bepul to'lo'v yetkazib berilgandan so'ng amalga oshiriladi
-                        </p>
 
 
 
@@ -157,12 +175,29 @@
 
                                 <form id="telegram_send" class="contact__form" action="https://echo.htmlacademy.ru/"
                                     method="post">
+                                    <select  id="option" class="form-select" aria-label="Default select example" style="padding: 25px;">
+                                        <option selected>Manzil</option>
+                                        <option value="Toshkent viloyati">Toshkent viloyati</option>
+                                        <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+                                        <option value="Samarqand viloyati">Samarqand viloyati</option>
+                                        <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+                                        <option value="Qoraqalpogʻiston Respublikasi">Qoraqalpogʻiston Respublikasi</option>
+                                        <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+                                        <option value="Navoiy viloyati">Navoiy viloyati</option>
+                                        <option value="Namangan viloyati">Namangan viloyati</option>
+                                        <option value="Xorazm viloyati">Xorazm viloyati</option>
+                                        <option value="Jizzax viloyati">Jizzax viloyati</option>
+                                        <option value="Fargʻona viloyati">Fargʻona viloyati</option>
+                                        <option value="Buxoro viloyati">Buxoro viloyati</option>
+                                        <option value="Andijon viloyati">Andijon viloyati</option>
+                                    </select>
+
                                     <input type="text" aria-label="First name" placeholder="Name" name="user_name"
                                         id="contact-name" class="form-control" style="padding: 25px;">
 
                                     <div class="input-group" style="margin-bottom: 20px;">
-                                        <input type="number" aria-label="Last name" placeholder="+998 9X XXX XX XX"
-                                            id="contact-email" class="form-control" style="padding: 25px;">
+                                        <input type="number" aria-label="Last name" placeholder="+998 XX XXX XX XX"
+                                            id="contact-email" class="form-control" min="8" max="8" style="padding: 25px;">
 
                                     </div>
 
